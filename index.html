@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mrunal Jadhav | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+      background: #f4f8fb;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #ff6a00, #ee0979);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header .header-content {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    header img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    nav {
+      background-color: #222;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    nav a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff6a00;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    .icon {
+      margin-right: 10px;
+      color: #ff6a00;
+    }
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #ee0979;
+    }
+    .project-heading {
+      background: linear-gradient(to right, #ff6a00, #ee0979);
+      color: white;
+      padding: 15px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: background 0.3s;
+      display: flex;
+      align-items: center;
+    }
+    .project-heading i {
+      margin-right: 10px;
+    }
+    .project-heading:hover {
+      background: linear-gradient(to right, #ee0979, #ff6a00);
+    }
+    .project-details {
+      display: none;
+      padding: 10px 20px;
+      border-left: 4px solid #ee0979;
+      background-color: #ffffff;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#home"><i class="fas fa-user icon"></i>Mrunal Jadhav</a>
+      <div class="navbar-nav">
+        <a class="nav-link" href="#home"><i class="fas fa-house icon"></i>Home</a>
+        <a class="nav-link" href="#career"><i class="fas fa-bullseye icon"></i>Career</a>
+        <a class="nav-link" href="#education"><i class="fas fa-graduation-cap icon"></i>Education</a>
+        <a class="nav-link" href="#skills"><i class="fas fa-cogs icon"></i>Skills</a>
+        <a class="nav-link" href="#projects"><i class="fas fa-folder-open icon"></i>Projects</a>
+        <a class="nav-link" href="#activities"><i class="fas fa-star icon"></i>Activities</a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home">
+    <div class="header-content">
+      <img src="profile.jpg" alt="Mrunal Jadhav">
+      <div>
+        <h1 style="margin: 0;">Mrunal Jadhav</h1>
+        <p style="margin: 5px 0;">
+          <i class="fas fa-envelope icon"></i>mrunaljadhav191@gmail.com |
+          <i class="fab fa-linkedin icon"></i><a href="https://linkedin.com/in/mrunal-jadhav-802967299" target="_blank" style="color:white; text-decoration: underline;">LinkedIn</a> |
+          <i class="fas fa-phone icon"></i>+91-92843-32967
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <section id="career">
+    <h2 class="section-title">Career Objective</h2>
+    <p>Motivated and detail-oriented Computer Science graduate with hands-on experience in full-stack development, machine learning, and software engineering. Passionate about building impactful solutions through code, and eager to contribute to dynamic, innovation-driven teams.</p>
+  </section>
+
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <ul>
+      <li><strong>Dr. D. Y. Patil College of Arts, Commerce, and Science, Pimpri</strong> - B.Sc. in Computer Science (2024) | CGPA: 8.2</li>
+      <li><strong>Kai Sau G. F. Patil Jr. College, Shahada</strong> - HSC (2021) | Percentage: 91.33%</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Technical Skills</h2>
+    <ul>
+      <li><i class="fas fa-code icon"></i>Languages: Java, Python, C, C++</li>
+      <li><i class="fas fa-globe icon"></i>Web: HTML, CSS, JavaScript, Bootstrap, Django</li>
+      <li><i class="fas fa-database icon"></i>Database & Tools: MySQL, Tkinter, Salesforce</li>
+      <li><i class="fas fa-brain icon"></i>Concepts: OOP, REST APIs, Machine Learning, Deep Learning</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-heading" onclick="toggleDetails('p1')"><i class="fas fa-laptop-code"></i>Portfolio using HTML CSS</div>
+    <div class="project-details" id="p1">
+      <p><strong>Team size:</strong> 1<br><strong>Key Skills:</strong> HTML, CSS<br>Created a responsive portfolio using HTML and CSS showcasing personal and project information.</p>
+    </div>
+
+    <div class="project-heading" onclick="toggleDetails('p2')"><i class="fas fa-video"></i>Human Face Recognition for Surveillance</div>
+    <div class="project-details" id="p2">
+      <p><strong>Team size:</strong> 4<br><strong>Key Skills:</strong> Python, Deep Learning, Machine Learning, Databases<br>Face Perception Network designed for real-time video surveillance using CNNs and OpenCV.</p>
+    </div>
+
+    <div class="project-heading" onclick="toggleDetails('p3')"><i class="fas fa-users"></i>Same Slot Same Spot</div>
+    <div class="project-details" id="p3">
+      <p><strong>Team size:</strong> 3<br><strong>Key Skills:</strong> Django, Python, HTML, CSS, JavaScript, Bootstrap<br>A meetup app for casual, business, and social meetups with scheduling and responsive UI.</p>
+    </div>
+
+    <div class="project-heading" onclick="toggleDetails('p4')"><i class="fas fa-hotel"></i>Hotel Management System (HMS)</div>
+    <div class="project-details" id="p4">
+      <p><strong>Team size:</strong> 2<br><strong>Key Skills:</strong> Python 3, Tkinter, MySQL<br>Desktop application with features for login, authentication, and CRUD operations for rooms, guests, and reservations. Secure handling via environment variables.</p>
+    </div>
+  </section>
+
+  <section id="activities">
+    <h2 class="section-title">Leadership & Extra-Curricular Activities</h2>
+    <ul>
+      <li><i class="fas fa-hands-helping icon"></i>Volunteer for cultural and academic college events</li>
+      <li><i class="fas fa-award icon"></i>Participant in inter-college tech fests and coding competitions</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mrunal Jadhav | Portfolio</p>
+  </footer>
+
+  <script>
+    function toggleDetails(id) {
+      const element = document.getElementById(id);
+      element.style.display = element.style.display === 'block' ? 'none' : 'block';
+    }
+
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
